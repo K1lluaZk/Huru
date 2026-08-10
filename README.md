@@ -135,8 +135,3 @@ La trazabilidad completa entre historias de usuario, casos de prueba manuales y 
 - **Manejo de errores centralizado:** todos los controladores usan `asyncHandler` + una clase `ApiError`, resueltos por un middleware único que también traduce errores conocidos de Prisma (p. ej. restricciones únicas) a respuestas HTTP claras.
 - **Autorización por rol:** middleware `authenticate` + `authorize('ADMIN' | 'CLIENT')` protege cada grupo de rutas tanto en el backend (fuente de verdad) como en el frontend (rutas protegidas por UX).
 
-## Alcance del Release 1 (y fuera de alcance)
-
-Incluye: registro/login, roles cliente/administrador, catálogo con búsqueda y filtro, detalle de producto, carrito, checkout, historial de pedidos, CRUD de productos, gestión de pedidos y dashboard administrativo básico.
-
-**Fuera de alcance (intencionalmente):** pagos reales, chat de soporte, cupones de descuento y motores de recomendación. Estos quedan reservados para releases futuros.
