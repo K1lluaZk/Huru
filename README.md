@@ -1,6 +1,6 @@
-# ShopHub — Proyecto Final de Programación III
+# Huru — Proyecto Final de Programación III
 
-Tienda online (e-commerce) full-stack que permite gestionar productos, usuarios, carrito de compras y pedidos, con un panel administrativo. Este repositorio corresponde al **Release 1**.
+Tienda online (e-commerce) full-stack que permite gestionar productos, usuarios, carrito de compras y pedidos, con un panel administrativo. 
 
 ## Stack tecnológico
 
@@ -11,13 +11,12 @@ Tienda online (e-commerce) full-stack que permite gestionar productos, usuarios,
 | Base de datos | PostgreSQL + Prisma ORM |
 | Autenticación | JWT + bcrypt |
 | Pruebas E2E | Selenium WebDriver + Mocha |
-| Gestión de proyecto | Jira (ver `docs/historias-de-usuario.md`) |
 | Repositorio | GitHub |
 
 ## Estructura del proyecto
 
 ```
-shophub/
+Huru/
 ├── backend/                 # API REST (Node.js + Express + Prisma)
 │   ├── prisma/
 │   │   ├── schema.prisma    # Modelos de datos
@@ -68,7 +67,6 @@ npm run seed                          # carga usuarios y productos de prueba
 npm run dev                           # http://localhost:4000
 ```
 
-Verifica que la API responde: `GET http://localhost:4000/api/health`.
 
 ### Variables de entorno (`backend/.env`)
 
@@ -93,7 +91,7 @@ CLIENT_URL="http://localhost:5173"
 ```bash
 cd frontend
 cp .env.example .env
-# VITE_API_URL=http://localhost:4000/api
+# VITE_API_URL=http://localhost:3000/api
 
 npm install
 npm run dev     # http://localhost:5173
@@ -101,11 +99,11 @@ npm run dev     # http://localhost:5173
 
 ## 3. Integración
 
-Con el backend corriendo en `:4000` y el frontend en `:5173` (configuración por defecto), la aplicación queda completamente integrada: el frontend consume la API REST mediante Axios (`frontend/src/services/api.ts`), adjuntando el token JWT en cada solicitud autenticada.
+Con el backend corriendo en `:3000` y el frontend en `:5173` (configuración por defecto), la aplicación queda completamente integrada: el frontend consume la API REST mediante Axios (`frontend/src/services/api.ts`), adjuntando el token JWT en cada solicitud autenticada.
 
 ## 4. Pruebas automatizadas (Selenium)
 
-Requiere que **backend y frontend estén corriendo** (`localhost:4000` y `localhost:5173`) y que la base de datos tenga los usuarios del seed.
+Requiere que **backend y frontend estén corriendo** (`localhost:3000` y `localhost:5173`) y que la base de datos tenga los usuarios del seed.
 
 ```bash
 cd selenium-tests
@@ -137,8 +135,3 @@ La trazabilidad completa entre historias de usuario, casos de prueba manuales y 
 - **Manejo de errores centralizado:** todos los controladores usan `asyncHandler` + una clase `ApiError`, resueltos por un middleware único que también traduce errores conocidos de Prisma (p. ej. restricciones únicas) a respuestas HTTP claras.
 - **Autorización por rol:** middleware `authenticate` + `authorize('ADMIN' | 'CLIENT')` protege cada grupo de rutas tanto en el backend (fuente de verdad) como en el frontend (rutas protegidas por UX).
 
-## Alcance del Release 1 (y fuera de alcance)
-
-Incluye: registro/login, roles cliente/administrador, catálogo con búsqueda y filtro, detalle de producto, carrito, checkout, historial de pedidos, CRUD de productos, gestión de pedidos y dashboard administrativo básico.
-
-**Fuera de alcance (intencionalmente):** pagos reales, chat de soporte, cupones de descuento y motores de recomendación. Estos quedan reservados para releases futuros.
