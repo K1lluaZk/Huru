@@ -1,0 +1,14 @@
+{
+  "name": "Huru-e2e-tests",
+  "version": "1.0.0",
+  "description": "Pruebas E2E automatizadas con Selenium WebDriver para Huru",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js --timeout 30000 --reporter spec"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.24.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.3"
+  }
+}
