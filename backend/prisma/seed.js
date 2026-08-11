@@ -55,7 +55,7 @@ async function main() {
       description: 'Auriculares inalámbricos con cancelación de ruido.',
       price: 49.99,
       stock: 25,
-      imageUrl: 'https://picsum.photos/seed/auriculares/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'electronica',
     },
     {
@@ -63,7 +63,7 @@ async function main() {
       description: 'Reloj inteligente con monitor de ritmo cardíaco.',
       price: 89.99,
       stock: 15,
-      imageUrl: 'https://picsum.photos/seed/smartwatch/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'electronica',
     },
     {
@@ -71,7 +71,7 @@ async function main() {
       description: 'Camiseta transpirable de secado rápido.',
       price: 19.99,
       stock: 50,
-      imageUrl: 'https://picsum.photos/seed/camiseta/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'ropa',
     },
     {
@@ -79,7 +79,7 @@ async function main() {
       description: 'Jean de mezclilla corte moderno.',
       price: 34.99,
       stock: 30,
-      imageUrl: 'https://picsum.photos/seed/jean/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'ropa',
     },
     {
@@ -87,7 +87,7 @@ async function main() {
       description: 'Juego de 5 piezas para cocina.',
       price: 65.0,
       stock: 10,
-      imageUrl: 'https://picsum.photos/seed/ollas/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'hogar',
     },
     {
@@ -95,7 +95,7 @@ async function main() {
       description: 'Lámpara regulable con puerto USB.',
       price: 22.5,
       stock: 40,
-      imageUrl: 'https://picsum.photos/seed/lampara/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'hogar',
     },
     {
@@ -103,7 +103,7 @@ async function main() {
       description: 'Balón oficial talla 5.',
       price: 24.99,
       stock: 35,
-      imageUrl: 'https://picsum.photos/seed/balon/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'deportes',
     },
     {
@@ -111,7 +111,7 @@ async function main() {
       description: 'Par de mancuernas 2-10 kg ajustables.',
       price: 79.99,
       stock: 12,
-      imageUrl: 'https://picsum.photos/seed/mancuernas/400/400',
+      imageUrl: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=400&h=400&q=80',
       categorySlug: 'deportes',
     },
   ];
