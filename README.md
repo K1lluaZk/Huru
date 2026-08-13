@@ -71,7 +71,7 @@ npm run dev                           # http://localhost:4000
 ### Variables de entorno (`backend/.env`)
 
 ```
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/shophub?schema=public"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/huru?schema=public"
 PORT=4000
 NODE_ENV=development
 JWT_SECRET="cambia_esta_clave_secreta"
