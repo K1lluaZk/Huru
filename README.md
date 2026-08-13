@@ -83,8 +83,8 @@ CLIENT_URL="http://localhost:5173"
 
 | Rol | Email | Contraseña |
 |-----|-------|-----------|
-| Administrador | admin@shophub.com | Admin123! |
-| Cliente | cliente@shophub.com | Client123! |
+| Administrador | admin@huru.com | Admin123! |
+| Cliente | cliente@huru.com | Client123! |
 
 ## 2. Frontend
 
