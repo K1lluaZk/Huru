@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import { HeroUIProvider } from '@heroui/react';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import Layout from './components/Layout';
@@ -18,9 +19,11 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminProducts from './pages/admin/AdminProducts';
 import AdminOrders from './pages/admin/AdminOrders';
 
-export default function App() {
+function AppContent() {
+  const navigate = useNavigate();
+
   return (
-    <BrowserRouter>
+    <HeroUIProvider navigate={navigate}>
       <AuthProvider>
         <CartProvider>
           <Routes>
@@ -52,6 +55,14 @@ export default function App() {
           </Routes>
         </CartProvider>
       </AuthProvider>
+    </HeroUIProvider>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
