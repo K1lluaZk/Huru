@@ -164,7 +164,7 @@ export default function Login() {
           </p>
 
           <div className="rounded-xl border border-zinc-200/70 bg-zinc-50 p-3 text-center text-[11px] text-zinc-600">
-            <span className="font-bold text-zinc-800">Cuentas demo:</span> Admin: <code className="font-mono bg-zinc-200/60 px-1 py-0.5 rounded text-[10px]">admin@huru.com</code> · Cliente: <code className="font-mono bg-zinc-200/60 px-1 py-0.5 rounded text-[10px]">cliente@huru.com</code>
+            <span className="font-bold text-zinc-800">Cuenta demo:</span> Cliente: <code className="font-mono bg-zinc-200/60 px-1 py-0.5 rounded text-[10px]">cliente@huru.com</code> · Contraseña: <code className="font-mono bg-zinc-200/60 px-1 py-0.5 rounded text-[10px]">Client123! </code>
           </div>
         </div>
       </div>
